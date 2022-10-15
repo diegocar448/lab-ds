@@ -11,7 +11,7 @@ export interface ButtonProps{
 
 export function Button({ children, asChild }: ButtonProps){
 
-    //verifica se há alguma tag senão será a tag padrão <span>
+    //verifica se há alguma tag senão será a tag padrão <button>
     const Comp = asChild ? Slot : 'button';
 
     return (
