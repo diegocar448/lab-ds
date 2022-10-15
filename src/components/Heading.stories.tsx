@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Text, TextProps } from './Text';
+import { Heading, HeadingProps } from './Heading';
 
 export default{
-    title: 'Components/Text',
-    component:Text,
+    title: 'Components/Heading',
+    component:Heading,
     //configurações globais para todas as variações
     args:{
         children:'Lorem ipsum.',
@@ -18,28 +18,28 @@ export default{
             }            
         }
     }
-} as Meta<TextProps>
+} as Meta<HeadingProps>
 
 //configurações por variação do ambiente
 //aqui criamos variações do nosso ambiente passando propriedades para ele
-export const Default: StoryObj<TextProps> = {}
+export const Default: StoryObj<HeadingProps> = {}
 
-export const Small: StoryObj<TextProps> = {
+export const Small: StoryObj<HeadingProps> = {
     args:{
         size: 'sm'
     }
 }
 
-export const Large: StoryObj<TextProps> = {
+export const Large: StoryObj<HeadingProps> = {
     args:{
         size: 'lg'
     }
 }
-export const CustomComponent: StoryObj<TextProps> = {
+export const CustomComponent: StoryObj<HeadingProps> = {
     args:{
         asChild:true,
         children: (
-            <p>Text with P tag</p>
+            <h1>Heading with H1</h1>
         )
     },
     argTypes:{
@@ -52,6 +52,6 @@ export const CustomComponent: StoryObj<TextProps> = {
             table:{
                 disable:true,
             }
-        }
+        }        
     }
 }
