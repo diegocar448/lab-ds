@@ -14,7 +14,7 @@ export interface TextInputRootProps{
 function TextInputRoot(props: TextInputRootProps){
     //para dar focus no componente vindo do componente filho
     return (
-        <div className='flex itens-center gap-3 py-4 px-3 rounded bg-gray-800 w-full focus-within:ring-2 ring-cyan-300'>
+        <div className='flex itens-center gap-3 h-13 py-4 px-3 rounded bg-gray-800 w-full focus-within:ring-2 ring-cyan-300'>
             { props.children }
         </div>
     )    
